@@ -6,7 +6,7 @@ CREATE TABLE post(
     nombre_usuario VARCHAR(25),
     fecha_creacion DATE,
     contenido VARCHAR,
-    descripción VARCHAR(255),
+    descripcion VARCHAR(255),
     PRIMARY KEY (id)
 );
 --3. Insertar 3 post, 2 para el usuario "Pamela" y uno para "Carlos". (0.6 Puntos)
@@ -45,3 +45,5 @@ DELETE FROM post WHERE nombre_usuario='Carlos';
 --8. Ingresar un nuevo post para el usuario "Carlos". (0.6 Puntos)
 INSERT INTO post (nombre_usuario, fecha_creacion, contenido, descripcion)
 VALUES ('Carlos', '2021-10-25','nuevo contenido','nueva descripcion');
+
+select * from post;
